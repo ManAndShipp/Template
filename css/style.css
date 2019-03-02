@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.container {
+  max-width: 1260px;
+  padding: 45px 90px;
+}
+.about_section {
+  background-image: url(../img/images/image.jpg);
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: center center;
+  position: relative;
+}
+.about {
+  font-family: "Roboto", sans-serif;
+  padding: 40px 30px 60px 30px;
+  width: 80%;
+  max-width: 800px;
+  background: rgba(237, 237, 237, 0.8);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px 30px 4px 4px;
+}
+.about__headings {
+  font-family: "M PLUS Rounded 1c", "Arial", sans-serif;
+  font-weight: 900;
+  font-size: 28px;
+  letter-spacing: 0.03em;
+}
+.about__headings-h2--orange {
+  color: #fd7230;
+}
+.about__items {
+  padding: 60px 0;
+}
+.about__items__item {
+  width: 40%;
+  max-width: 320px;
+  display: inline-block;
+  margin-left: 50px;
+}
+.about__items__item:nth-child(3),
+.about__items__item:nth-child(4) {
+  margin-top: 50px;
+}
+.about__items__item__iconblock,
+.about__items__item-description {
+  display: inline-block;
+  vertical-align: middle;
+}
+.about__items__item__iconblock {
+  width: 20%;
+}
+.about__items__item-description {
+  width: 75%;
+}
+.about__buttons {
+  margin-left: 50px;
+}
+.button:first-child {
+  margin-right: 40px;
+}
+.button {
+  font-family: "M PLUS Rounded 1c", "Arial", sans-serif;
+  font-weight: 900;
+  color: #fff;
+  font-size: 20px;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  padding: 7px 13px;
+  background-color: #fd7230;
+}
+.button-o {
+  background-color: #fff;
+  color: #fd7230;
+}
+@media only screen and (max-width: 1180px) {
+  .about {
+    width: 100%;
+  }
+  .about__headings {
+    font-size: 24px;
+    line-height: 50px;
+  }
+  .about_section {
+    padding-bottom: 90px;
+  }
+  .about_section::after {
+    content: url(../img/icons/arrows_down_double.svg);
+    position: absolute;
+    width: 41px;
+    height: 47px;
+    bottom: 0;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    transform: translateY(-7px);
+  }
+}
